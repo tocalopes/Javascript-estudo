@@ -1,0 +1,12 @@
+console.log('igual:', '1' == 1)
+console.log('extritamente igual :', '1' === 1)
+console.log('diferente:', '3' != 3)
+console.log('extritamente diferente:', '3' !== 3)
+
+const d1 = new Date()
+const d2 = new Date()
+console.log('Data extritamente igual:', d1 === d2)
+console.log('data igual:', d1 == d2)
+console.log('Data extritamente igual:', d1.getTime() === d2.getTime())
+console.log(undefined == null)
+console.log(undefined === null)
