@@ -1,0 +1,17 @@
+{
+  "name": "funcionarios",
+  "version": "1.0.0",
+  "description": "teste",
+  "main": "funcionaris.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon",
+    "dev": "nodemon",
+    "oloko":"echo oloooko && mkdir teste" 
+  },
+  "author": "gabriel lopes",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}
