@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <title>Tamanho Box</title>
     <style>
+        * {
+            box-sizing: border-box; /*borda e padding fazem parte do width*/
+        }
         body {
             font-size: 45px;
+            
         }
+
+        div {
+            background-color: deepskyblue;
+            width: 100%;
+            height: 300px;
+            padding: 100px;
+            border: solid 20px;
+            
+            /*content-box => O conteudo da pagina é considerado o width,padding e border não*/
+        }   
     </style>
 </head>
 <body>

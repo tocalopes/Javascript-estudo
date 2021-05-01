@@ -6,16 +6,61 @@
     <title>Flexbox #02</title>
     <link rel="stylesheet" href="css/tag.css">
     <style>
-        /* ... */
+
+
+        .flex-container {
+            display: flex;
+            height: 300px;
+            width: 600px;
+            border: solid 3px black; 
+            box-sizing: border-box;
+        }
+
+        div {
+            box-sizing: border-box;
+            border: solid 6px blue;
+        }
+
+
+        .flex-container div:nth-child(3){
+            background-color:indianred;
+            order: 1;
+            order: 0;
+            order: -1;
+            align-self: center;
+            align-self: flex-start;
+            align-self: stretch;
+        }
+
+        .flex-container div {
+            width: 100px;
+            flex-grow: 1;
+        }
+
+        /* Sera aplica no primeiro elemento definido no html */
+        .flex-container div:nth-child(1){
+            flex-grow: 2;
+        }
+
+        .flex-container {
+            width: 300px;
+            flex-shrink: 1;
+        }
+
+        .flex-container div:nth-child(1){
+            flex-shrink: 5;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <div class="flex-container tag nolabel">
-        <div class="tag nolabel">1</div>
-        <div class="tag nolabel">2</div>
-        <div class="tag nolabel">3</div>
-        <div class="tag nolabel">4</div>
+    <div class="flex-container ">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
     </div>
     <script src="js/tag.js"></script>
 </body>

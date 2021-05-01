@@ -51,9 +51,97 @@
             background: #f50a31;
             color: #fff;
         }
-        /* ==================== */
-        /* Solução com Flex Box */
-        /* ==================== */
+
+        .cabecalho {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .menu {
+            flex-grow: 10;
+        }
+
+        .menu ul {
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0px 10px;
+        }
+
+
+
+        /*
+        ---------M I N H A   S O L U Ç Ã O --------------------
+         .cabecalho {
+            border: solid black 5px;
+            background-color: rgb(56, 56, 56);
+            box-sizing: border-box;
+            height: 150px;
+            width: 100%;
+            margin: 0 auto;
+            display: flex;
+        }
+
+        .cabecalho .logo {
+            display: flex;
+            align-items: center;
+            flex-basis: 20%;
+        }
+        .cabecalho img {
+            width: 100%;
+        }
+        li {
+            list-style: none;
+        }
+
+        a{
+            font-family: 'Oswald','sans-serif';
+            text-decoration: none;
+            color: #FFF;
+        }
+        .cabecalho .menu a{
+            font-size: 1.5em;
+        }
+
+        .cabecalho .menu a:hover{
+            color: black;
+            background-color: cornflowerblue;
+            padding: 10px 20px;
+        }
+        .menu {
+            flex-basis: 45%;
+            display: flex;
+        }
+        .menu ul{
+            width: 100%;
+        }
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .autenticacao {
+            margin-left: 10%;
+            font-size: 1.5em;
+            flex-basis: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .autenticacao .botao-destaque{
+            background-color: tomato;
+            padding: 10px;
+            font-size: 1.3em;
+            border-radius: 50px;
+        } */
+
+
+
     </style>
 </head>
 

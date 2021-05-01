@@ -16,6 +16,57 @@
             flex-direction: column;
             align-items: center;
         }
+
+        p {
+            font-size: 1em; /*padrao*/
+            font-size: 100%; /*padrao*/
+            font-size: 16px; /*padrao*/
+            font-size: 12pt; /*padrao*/
+
+            /*unidade absolutas*/
+            font-size: 100px; /*tamanho de pixel é relativo*/
+            font-size: 72pt;/*pontos*/
+            font-size: 1in;
+
+            /*unidades relativas*/
+            font-size: 2.2em;/*pega referência mais proxima*/
+            font-size: 2.2rem; /*pega referência mais externa, html*/
+            font-size: 5vh;
+            font-size: 5vw;
+
+            font-family: monospace;
+            font-family: Georgia, serif;
+            font-family: Verdana, sans-serif;
+            font-family: 'Indie Flower',cursive;
+
+
+            font-weight: 200;
+            font-style: italic;
+            text-transform: uppercase;
+            text-decoration: underline; /*overline line-through*/
+            word-spacing: 10px;
+            letter-spacing: 20px;
+            line-height: 2.5em;
+            text-align: center;
+
+        }
+
+        .botao {
+            text-decoration: none;
+            font-size: 28px;
+            padding: 10px 30px;
+            border-radius: 25px;
+        }
+
+        .destaque {
+            color: #fff;
+            background-color: tomato;
+            box-shadow: 2px 2px 1px 1px #000;
+        }
+
+        .destaque:active {
+            box-shadow: none;
+        }
     </style>
 </head>
 

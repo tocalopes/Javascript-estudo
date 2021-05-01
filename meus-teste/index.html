@@ -4,16 +4,47 @@
     <head>
         <meta charset="utf-8">
         <title>Curriculum Gabriel</title>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+        <style>
+
+            header.topo{
+                display: flex;
+                flex-direction: row;
+                font-family: 'Roboto', sans-serif;
+                background-color: rgb(54, 0, 155);
+            }
+    
+            #photo{
+                flex-grow: 1;
+                margin-left: 100px;
+            }
+    
+            #basic-info{
+                flex-grow: 2;
+                font-size: 1.8rem;
+                color: #fff;
+            }
+
+            #basic-info .profissao{
+                margin-left: 200px;
+            }
+    
+            #profile-picture {
+                width: 130px;
+                height: 150px;
+            }
+        </style>
     </head>
     
     <body>
-        <header>
+        <header class="topo">
             <div id="photo">
                 <img src="foto.jpeg" id="profile-picture"/>
             </div>
             <div id = "basic-info">
-                <p>Gabriel Lopes Pontes, 23</p>
-                <p>Desenvolvedor de software</p>
+                <p class="nome">Gabriel Lopes Pontes, 23</p>
+                <p class="profissao">Desenvolvedor de software</p>
             </div>
         </header>
 
@@ -51,23 +82,4 @@
 
     </body>
 
-    <style>
-        header{
-            display: flex;
-            flex-direction: row;
-        }
-
-        #photo{
-            flex-grow: 1;
-        }
-
-        #basic-info{
-            flex-grow: 2;
-        }
-
-        #profile-picture {
-            width: 130px;
-            height: 150px;
-        }
-    </style>
 </html>
